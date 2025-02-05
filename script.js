@@ -7,9 +7,12 @@ const result = document.querySelector('#result');
 let count = 0;
 const colorArray = ['red', 'green', 'yellow', 'pink', 'blue', 'orange'];
 
-let random = Math.floor(Math.random() * colorArray.length + 1);
-let color = colorArray[random];
-let display = (colorDisplay.style.backgroundColor = color);
+function random() {
+  let random = Math.floor(Math.random() * colorArray.length + 1);
+  let color = colorArray[random];
+  let display = (colorDisplay.style.backgroundColor = color);
+  return display;
+}
 
 function updateDisplay() {
   score.innerText = count;
@@ -21,8 +24,7 @@ buttonContainer.addEventListener('click', (e) => {
       score.innerText = count++;
       result.innerText = 'correct!!';
       result.style.color = 'green';
-      result.innerText = 'correct!!';
-      result.style.color = 'green';
+      random();
       updateDisplay();
     } else {
       result.innerText = 'wrong!!';
@@ -33,6 +35,7 @@ buttonContainer.addEventListener('click', (e) => {
       score.innerText = count++;
       result.innerText = 'correct!!';
       result.style.color = 'green';
+      random();
       updateDisplay();
     } else {
       result.innerText = 'wrong!!';
@@ -43,6 +46,7 @@ buttonContainer.addEventListener('click', (e) => {
       score.innerText = count++;
       result.innerText = 'correct!!';
       result.style.color = 'green';
+      random();
       updateDisplay();
     } else {
       result.innerText = 'wrong!!';
@@ -53,6 +57,7 @@ buttonContainer.addEventListener('click', (e) => {
       score.innerText = count++;
       result.innerText = 'correct!!';
       result.style.color = 'green';
+      random();
       updateDisplay();
     } else {
       result.innerText = 'wrong!!';
@@ -63,6 +68,7 @@ buttonContainer.addEventListener('click', (e) => {
       score.innerText = count++;
       result.innerText = 'correct!!';
       result.style.color = 'green';
+      random();
       updateDisplay();
     } else {
       result.innerText = 'wrong!!';
@@ -73,6 +79,7 @@ buttonContainer.addEventListener('click', (e) => {
       score.innerText = count++;
       result.innerText = 'correct!!';
       result.style.color = 'green';
+      random();
       updateDisplay();
     } else {
       result.innerText = 'wrong!!';
@@ -84,9 +91,7 @@ buttonContainer.addEventListener('click', (e) => {
     result.style.color = 'navy';
     result.innerText = 'Guess the color Again!';
     score.innerText = 0;
-    let random = Math.floor(Math.random() * colorArray.length + 1);
-    let color = colorArray[random];
-    let display = (colorDisplay.style.backgroundColor = color);
+    random();
     return display;
   } else {
     return;
