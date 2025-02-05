@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>COLOR GAME</h1></header>
+    <section class="container">
+      <h3 class="counter" data-testid="gameStatus">
+        Score: <span id="score" data-testid="score">0</span>
+      </h3>
+      <div class="color-container">
+        <div
+          class="colorDisplay"
+          id="colorDisplay"
+          data-testid="colorBox"
+        ></div>
+
+        <!-- the option buttons -->
+
+        <div class="option-button-container" data-testid="colorOption">
+          <button class="btn green" id="green"></button>
+          <button class="btn" id="yellow"></button>
+          <button class="btn red" id="red"></button>
+          <button class="btn" id="pink"></button>
+          <button class="btn blue" id="blue"></button>
+          <button class="btn" id="orange"></button>
+        </div>
+
+        <div class="result">
+          <p id="result" data-testid="gameInstructions">Guess the color!</p>
+        </div>
+
+        <button id="reset" class="reset" data-testid="newGameButton">
+          RESET
+        </button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

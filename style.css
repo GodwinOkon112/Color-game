@@ -1,0 +1,147 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #171439;
+  margin-top: 1rem;
+  height: 90vh;
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  min-width: 200px;
+  padding: 1.5rem;
+  border-radius: 1em;
+  border-top: 1px solid #171439;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+}
+
+span {
+  font-size: 1.8rem;
+}
+
+.colorDisplay {
+  height: 110px;
+  border-radius: 0.2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: green;
+}
+
+/* option button styles */
+.option-button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 0.5px solid rgb(23, 20, 57, 0.5);
+  border-radius: 0.3rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 0.2rem;
+  width: 32%;
+  padding: 1.2rem 1rem;
+  cursor: pointer;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+#orange {
+  background-color: orange;
+}
+#pink {
+  background-color: pink;
+}
+#yellow {
+  background-color: yellow;
+}
+#green {
+  background-color: green;
+}
+#blue {
+  background-color: blue;
+}
+#red {
+  background-color: red;
+}
+
+.reset {
+  width: 100%;
+  background-color: #171439;
+  transition: 0.2s;
+  border-radius: 2rem;
+}
+
+.reset:hover {
+  color: #171439;
+  background-color: transparent;
+  border: 1px solid rgb(23, 20, 57, 0.5);
+}
+
+.result {
+  margin-top: 2rem;
+}
+
+.result p {
+  text-align: center;
+  color: #171439;
+  font-size: 1.5rem;
+}
+
+/* responsiveness  */
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .container {
+    width: 50%;
+    min-width: 70%;
+    padding: 1rem;
+  }
+
+  .option-button-container {
+    row-gap: 0.7rem;
+  }
+
+  button {
+    width: 48%;
+    padding: 1.1rem 1rem;
+  }
+
+  .colorDisplay {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .container {
+    max-width: 100%;
+    min-width: 260px;
+    padding: 1rem;
+  }
+}
