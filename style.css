@@ -96,7 +96,6 @@ button {
   background-color: #171439;
   transition: 0.2s;
   border-radius: 2rem;
-  font-size: 1rem;
 }
 
 .reset:hover {
