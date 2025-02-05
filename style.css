@@ -6,12 +6,15 @@ body {
   color: #171439;
   margin-top: 1rem;
   height: 90vh;
+  font-family: 'Poppins', serif;
+  font-style: normal;
 }
 
 h1 {
-  letter-spacing: 0.5rem;
-  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+  font-size: 1.4rem;
   margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .container {
@@ -26,12 +29,13 @@ h1 {
 
 .counter {
   text-align: center;
-  font-size: 1.4rem;
-  letter-spacing: 0.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
 }
 
 span {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .colorDisplay {
@@ -42,7 +46,6 @@ span {
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
-  background-color: green;
 }
 
 /* option button styles */
@@ -93,6 +96,7 @@ button {
   background-color: #171439;
   transition: 0.2s;
   border-radius: 2rem;
+  font-size: 1rem;
 }
 
 .reset:hover {
@@ -108,13 +112,13 @@ button {
 .result p {
   text-align: center;
   color: #171439;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* responsiveness  */
 @media screen and (max-width: 650px) {
   h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bolder;
   }
 
@@ -139,6 +143,9 @@ button {
 }
 
 @media screen and (max-width: 335px) {
+  h1 {
+    font-size: 1.2rem;
+  }
   .container {
     max-width: 100%;
     min-width: 260px;

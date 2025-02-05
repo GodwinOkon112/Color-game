@@ -7,6 +7,7 @@ const result = document.querySelector('#result');
 let count = 0;
 const colorArray = ['red', 'green', 'yellow', 'pink', 'blue', 'orange'];
 
+// random function
 function random() {
   let random = Math.floor(Math.random() * colorArray.length + 1);
   let color = colorArray[random];
@@ -14,10 +15,12 @@ function random() {
   return display;
 }
 
+// counter updating function
 function updateDisplay() {
   score.innerText = count;
 }
 
+// option button color function
 buttonContainer.addEventListener('click', (e) => {
   if (e.target.id == 'green') {
     if (colorDisplay.style.backgroundColor == 'green') {
@@ -87,9 +90,10 @@ buttonContainer.addEventListener('click', (e) => {
     }
   } else if (e.target.id == 'reset') {
     count = 0;
+    e.target.innerText = 'RESET';
     updateDisplay();
     result.style.color = 'navy';
-    result.innerText = 'Guess the color Again!';
+    result.innerText = 'Guess the color !!';
     score.innerText = 0;
     random();
     return display;
