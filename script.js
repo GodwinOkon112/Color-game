@@ -90,7 +90,7 @@ buttonContainer.addEventListener('click', (e) => {
     }
   } else if (e.target.id == 'reset') {
     count = 0;
-    e.target.innerText = 'RESET';
+    e.target.innerText = 'NEW GAME';
     updateDisplay();
     result.style.color = 'navy';
     resetBtn.style.backgroundColor = '#110e33';
