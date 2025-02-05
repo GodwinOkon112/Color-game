@@ -99,9 +99,9 @@ button {
 }
 
 .reset:hover {
-  color: #171439;
-  background-color: transparent;
-  border: 1px solid rgb(23, 20, 57, 0.5);
+  color: white;
+  background-color: rgb(17, 14, 51);
+  border: 1px solid rgba(15, 13, 37, 0.5);
 }
 
 .result {
