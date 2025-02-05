@@ -93,6 +93,7 @@ buttonContainer.addEventListener('click', (e) => {
     e.target.innerText = 'RESET';
     updateDisplay();
     result.style.color = 'navy';
+    resetBtn.style.backgroundColor = '#110e33';
     result.innerText = 'Guess the color !!';
     score.innerText = 0;
     random();
